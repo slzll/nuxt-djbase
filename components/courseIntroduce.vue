@@ -64,7 +64,7 @@
 </script>
 
 <style lang="scss" rel="stylesheet/scss">
-  @import "~asset/scss/mixin";
+  @import "~assets/scss/mixin";
 
   .course_introduce {
     background-color: $fill-base;

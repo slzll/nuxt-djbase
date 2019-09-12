@@ -27,8 +27,8 @@ module.exports = {
   */
   css: [
     '@/assets/img/iconfont/iconfont.css',
-    '@/assets/scss/base.scss',
-    'mint-ui/lib/style.css'
+    'mint-ui/lib/style.css',
+    '@/assets/scss/base.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -79,20 +79,5 @@ module.exports = {
   },
   router: {
     mode: 'history'
-  },
-  generate: {
-    routes: [
-      '/',
-      '/notice',
-      '/newsCenter',
-      '/examCenter',
-      '/partyMemberFile',
-      '/partyPayment',
-      '/threeSession',
-      '/topicPartyDate',
-      '/volunteerActivity',
-      '/newsSearch',
-      '/404'
-    ]
   }
 }

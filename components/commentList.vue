@@ -13,7 +13,7 @@
           </div>
         </div>
         <div v-if="!isReply" class="reply_count" @click="toggleClickEvent(item)">
-          <img class="reply_img" src="../assets/Photowall-detail-evaluate-gray@2x.png" alt="">
+          <img class="reply_img" src="~/assets/img/Photowall-detail-evaluate-gray@2x.png" alt="">
           <div>{{item.ReplyCount}}条</div>
         </div>
       </li>

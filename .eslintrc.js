@@ -35,6 +35,7 @@ module.exports = {
     'vue/name-property-casing': 'off',
     'nuxt/no-globals-in-created': 'off',
     'vue/require-default-prop': 'off',
-    'import/no-named-default': 'off'
+    'import/no-named-default': 'off',
+    'vue/attribute-hyphenation': 'off'
   }
 }

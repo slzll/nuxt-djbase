@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { Indicator, Toast } from 'mint-ui'
 import qs from 'qs'
-import { isAllowWeiXin, pathname } from '~/service/config'
+import { isAllowWeiXin } from '~/service/config'
 
 let getStore, getWXUrl, userAgent
 if (process.client) {
@@ -78,11 +78,11 @@ function checkStatus (response) {
         } // 如果是app内嵌页面，则掉线后不跳到登录页
         if (getStore('userAgent').weixin && isAllowWeiXin) {
           Toast({ message: '账号掉线，请重新登录', position: 'bottom' })
-          window.location.href = getWXUrl('#/login?currentUrl' + encodeURIComponent(currentUrl))
+          window.location.href = getWXUrl('/login?currentUrl' + encodeURIComponent(currentUrl))
         } else {
           Toast({ message: '账号掉线，请重新登录', position: 'bottom' })
           console.log('fetch登录')
-          window.location.href = `${pathname}/#/login?currentUrl=${encodeURIComponent(currentUrl)}`
+          window.location.href = `/login?currentUrl=${encodeURIComponent(currentUrl)}`
         }
       } else if (response.data.Type != 1 && response.status !== 200) {
         console.warn(`status:${response.status},statusText:${response.statusText}`)
