@@ -25,7 +25,7 @@
     "jsqr": "^1.2.0",
     "mint-ui": "^2.2.13",
     "nuxt": "^2.0.0",
-    "qs": "^6.7.0",
+    "qs": "^6.8.3",
     "weixin-js-sdk": "^1.4.0-test"
   },
   "devDependencies": {
